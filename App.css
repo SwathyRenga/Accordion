@@ -1,0 +1,50 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-color:blue;
+  margin :0 auto;
+}
+.accordian{
+  widows: 500px;
+   margin:0 auto;
+}
+.tab{
+  background-color: rgb(224, 237, 243);
+  padding:10px;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom: 1px solid;
+}
+
+
+.tab:hover,
+.active{
+background-color: rgb(230, 219, 215);
+}
+
+
+.content{
+  background-color: rgb(177, 193, 201);
+  transition: all 0.5s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+.content p{
+  padding: 10px;
+}
+
+.showContent{
+  height:70px;
+  overflow-y:scroll;
+}
